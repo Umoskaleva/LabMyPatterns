@@ -27,13 +27,18 @@ public class Main {
         sceneBlack.createPoint();
         sceneBlack.createLine();
         sceneBlack.createCircle();
+        sceneBlack.createTriangle();
 
         SceneColor sceneColor = new SceneColor();
         sceneColor.createPoint();
         sceneColor.createLine();
         sceneColor.createCircle();
+        sceneColor.createTriangle();
 
         Scene.instance.draw();
+
+
+
 
     }
 }

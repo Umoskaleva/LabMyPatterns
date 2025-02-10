@@ -32,4 +32,11 @@ public class SceneBlack implements Factory {
         Scene.instance.add(cBlack); //hook
         return cBlack;
     }
+
+    @Override
+    public Triangle createTriangle() {
+       Triangle tBlack = new Triangle(3,3,4,4,5,5);
+       Scene.instance.addTriangle(tBlack);//hook
+       return tBlack;
+    }
 }

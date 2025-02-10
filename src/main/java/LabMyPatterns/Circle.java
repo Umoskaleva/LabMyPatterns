@@ -1,6 +1,6 @@
 package LabMyPatterns;
 
-public class Circle extends GraphObject{
+public class Circle extends GraphObject {
 
     private int x;
     private int y;
@@ -10,6 +10,10 @@ public class Circle extends GraphObject{
         this.x = x;
         this.y = y;
         this.r = r;
+    }
+
+    public Circle() {
+
     }
 
     public int getX() {

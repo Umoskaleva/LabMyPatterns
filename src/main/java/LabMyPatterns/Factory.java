@@ -6,4 +6,5 @@ public interface Factory {
     Point createPoint();
     Line createLine();
     Circle createCircle();
+    Triangle createTriangle();
 }

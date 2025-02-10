@@ -2,7 +2,7 @@ package LabMyPatterns;
 
 public class SceneColor implements Factory {
 
-    Color color = Color.YELLOW;
+    public Color color = Color.YELLOW;
 
     @Override
     public Scene scene(Color color) {
@@ -32,5 +32,12 @@ public class SceneColor implements Factory {
         Circle cYellow = new Circle(2, 2, 2);
         Scene.instance.add(cYellow); //hook
         return cYellow;
+    }
+
+    @Override
+    public Triangle createTriangle() {
+        Triangle tYellow = new Triangle(3,3,4,4,5,5);
+        Scene.instance.addTriangle(tYellow);
+        return tYellow;
     }
 }
